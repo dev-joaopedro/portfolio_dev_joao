@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Portfólio de João Pedro Garcia Gonzaga - Analista de Dados e Desenvolvedor Back-End. Especialista em inovação, soluções inteligentes e tecnologia.">
+        content="Portfólio de João Pedro Garcia Gonzaga - Desenvolvedor Back-End. Especialista em inovação, soluções inteligentes e tecnologia.">
     <meta name="keywords"
-        content="João Pedro Garcia Gonzaga, Portfólio, Analista de Dados, Desenvolvedor Back-End, Golang, Java, MySQL, API REST">
+        content="João Pedro Garcia Gonzaga, Portfólio, Desenvolvedor Back-End, Golang, Java, MySQL, API REST">
     <meta name="author" content="João Pedro Garcia Gonzaga">
-    <title>João Pedro | Analista de Dados & Back-End</title>
+    <title>João Pedro | Desenvolvedor Back-End</title>
 
     <!-- Google Fonts: Inter para tipografia limpa e moderna -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,7 +29,8 @@
     <!-- Cabeçalho / Navegação -->
     <header id="header">
         <div class="container nav-container">
-            <a href="#" class="logo">João<span>Pedro</span></a>
+            <a href="#" class="logo"><span
+                    style="color: var(--secondary); font-family: monospace; font-weight: 500; letter-spacing: -1px; margin-right: 2px;">dev-</span>João<span>Pedro</span></a>
 
             <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Abrir menu">
                 <i class="fas fa-bars"></i>
@@ -52,11 +53,11 @@
         <div class="container">
             <div class="hero-content">
                 <span class="hero-greeting">Olá, eu sou</span>
-                <h1 class="hero-title">João Pedro <span>Gonzaga</span></h1>
-                <h2 class="hero-role">Analista de Dados & Back-End</h2>
-                <p class="hero-desc">
-                    Apaixonado por tecnologia, inovação e soluções inteligentes. Transformo dados complexos em insights
-                    precisos e desenvolvo arquiteturas de software robustas, escaláveis e eficientes.
+                <h1 class="hero-title reveal">João <span>Pedro</span></h1>
+                <h2 class="hero-role reveal"><span id="typing-text"></span><span class="typing-cursor"></span></h2>
+                <p class="hero-desc reveal">
+                    Programador com forte foco em desenvolvimento back-end. Sou movido por inovação técnica, resolução
+                    de problemas complexos e agregação de valor através de código limpo, eficiente e sustentável.
                 </p>
                 <div class="hero-buttons">
                     <a href="#projetos" class="btn btn-primary">
@@ -72,24 +73,27 @@
 
     <!-- Seção Sobre Mim -->
     <section id="sobre" class="about">
-        <div class="container">
+        <div class="container reveal">
             <h2 class="section-title">Sobre Mim</h2>
             <div class="about-content">
                 <div class="about-text">
                     <p>
-                        Sou um <strong>programador com foco em desenvolvimento back-end e análise de dados</strong>.
-                        Tenho paixão por desvendar problemas complexos através de tecnologia e criar sistemas que causem
-                        impacto real.
+                        Sou um <strong>desenvolvedor focado em engenharia de software e arquitetura back-end</strong>,
+                        apaixonado pelo impacto que a tecnologia promove. Estou em constante busca por aprimoramento no
+                        universo tech para construir sistemas que combinam escalabilidade e performance.
                     </p>
                     <p>
-                        Com minha constante busca por atualização no universo tech, priorizo o aprimoramento contínuo da
-                        qualidade do meu código, visando sempre a eficiência, organização e a entrega de resultados
-                        sólidos e sustentáveis para o negócio.
+                        Com um forte compromisso com a qualidade, busco otimizar processos e garantir que meu código
+                        entregue <strong>resultados sólidos e confiáveis para o ambiente de negócios</strong>. Acredito
+                        que um bom back-end é invisível aos olhos do usuário, mas indispensável para o sucesso de uma
+                        plataforma.
                     </p>
                     <p>
-                        Atualmente atuando como Suporte Técnico, agrego uma visão prática de resolução de problemas,
-                        garantindo que as soluções desenvolvidas sejam não apenas tecnicamente válidas, mas
-                        perfeitamente utilizáveis pelo cliente final.
+                        Minha atuação atual como Suporte Técnico fortaleceu minha visão empática sobre os
+                        <strong>desafios reais dos usuários e a criticidade dos sistemas em produção</strong>. Essa
+                        vivência prática aprimora minha capacidade analítica, permitindo-me antecipar erros, melhorar
+                        documentações e desenhar arquiteturas resilientes que facilitam tanto o uso pelo cliente quanto
+                        a manutenção por outros desenvolvedores.
                     </p>
                 </div>
             </div>
@@ -98,21 +102,22 @@
 
     <!-- Seção de Experiência & Educação (Timeline) -->
     <section id="experiencia" class="timeline">
-        <div class="container">
+        <div class="container reveal">
             <h2 class="section-title">Trajetória</h2>
 
             <div class="timeline-grid">
                 <!-- Coluna Experiência -->
-                <div class="timeline-column">
+                <div class="timeline-column reveal-left">
                     <h3><i class="fas fa-briefcase"></i> Experiência Profissional</h3>
 
                     <div class="timeline-item">
                         <span class="timeline-date">Novembro 2024 – Presente</span>
                         <h4 class="timeline-title">Suporte Técnico</h4>
-                        <div class="timeline-org">Atual Informática</div>
-                        <p style="color: var(--text-muted); margin-top: 0.5rem; font-size: 0.95rem;">Resolução de
-                            incidentes, manutenção de sistemas e garantia operacional, provendo suporte de excelência e
-                            identificação ágil de problemas tecnológicos.</p>
+                        <div class="timeline-org">Farsoft Systems</div>
+                        <p style="color: var(--text-muted); margin-top: 0.5rem; font-size: 0.95rem;">Suporte em sistemas
+                            ERP, atuando fortemente na análise e identificação de erros críticos. Responsável também
+                            pela extração de relatórios via <strong>SQL</strong> e desenvolvimento pontual de
+                            ferramentas automatizadas para agilizar e facilitar as rotinas internas da empresa.</p>
                     </div>
 
                     <div class="timeline-item">
@@ -126,7 +131,7 @@
                 </div>
 
                 <!-- Coluna Formação Academia -->
-                <div class="timeline-column">
+                <div class="timeline-column reveal">
                     <h3><i class="fas fa-graduation-cap"></i> Formação Acadêmica</h3>
 
                     <div class="timeline-item">
@@ -136,9 +141,9 @@
                     </div>
 
                     <div class="timeline-item">
-                        <span class="timeline-date">Incompleto</span>
+                        <span class="timeline-date">2020 – 2022</span>
                         <h4 class="timeline-title">Engenharia de Software</h4>
-                        <div class="timeline-org">INATEL</div>
+                        <div class="timeline-org">INATEL (Incompleto)</div>
                     </div>
                 </div>
             </div>
@@ -147,7 +152,7 @@
 
     <!-- Seção Habilidades -->
     <section id="habilidades" class="skills">
-        <div class="container">
+        <div class="container reveal">
             <h2 class="section-title">Habilidades Técnicas</h2>
 
             <div class="skills-grid">
@@ -221,7 +226,7 @@
 
     <!-- Seção Projetos (Fictícios coerentes com o perfil) -->
     <section id="projetos">
-        <div class="container">
+        <div class="container reveal">
             <h2 class="section-title">Projetos em Destaque</h2>
 
             <div class="projects-grid">
@@ -232,17 +237,17 @@
                         <i class="fas fa-network-wired"></i>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">GoLogistics MicroAPI</h3>
-                        <p class="project-desc">Um microserviço robusto desenvolvido em Go para cálculo assíncrono de
-                            rotas e fretes. Implementa concorrência nativa (goroutines) para processar milhares de
-                            requisições por segundo com baixa latência.</p>
+                        <h3 class="project-title">Moran.go</h3>
+                        <p class="project-desc">Projeto desenvolvido em Go (Golang). Inclui implementações práticas e
+                            estudos de caso utilizando a linguagem para explorar conceitos e desenvolvimento back-end.
+                        </p>
                         <div class="project-tags">
                             <span>Golang</span>
-                            <span>REST API</span>
-                            <span>Docker</span>
+                            <span>Back-end</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" target="_blank"><i class="fa-brands fa-github"></i> Código Fonte</a>
+                            <a href="https://github.com/dev-joaopedro/moran-go" target="_blank"><i
+                                    class="fa-brands fa-github"></i> Código Fonte</a>
                         </div>
                     </div>
                 </div>
@@ -253,17 +258,17 @@
                         <i class="fas fa-chart-pie"></i>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">DataPipe Analytics</h3>
-                        <p class="project-desc">Pipeline de análise de dados construído para extrair bilhões de
-                            registros de um banco MySQL, transformar as informações e gerar relatórios financeiros
-                            automatizados sobre comportamento de compras.</p>
+                        <h3 class="project-title">Plano de voo para envio</h3>
+                        <p class="project-desc">Projeto acadêmico desenvolvido durante o curso de Análise e
+                            Desenvolvimento de Sistemas. Foco na resolução de problemas propostos e aplicação prática de
+                            conceitos de programação.</p>
                         <div class="project-tags">
-                            <span>Python</span>
-                            <span>MySQL</span>
-                            <span>Data Analysis</span>
+                            <span>Acadêmico</span>
+                            <span>Desenvolvimento</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" target="_blank"><i class="fa-brands fa-github"></i> Código Fonte</a>
+                            <a href="https://github.com/dev-joaopedro/ProjetoA3" target="_blank"><i
+                                    class="fa-brands fa-github"></i> Código Fonte</a>
                         </div>
                     </div>
                 </div>
@@ -295,7 +300,7 @@
 
     <!-- Seção Contato -->
     <section id="contato" class="contact">
-        <div class="container">
+        <div class="container reveal">
             <h2 class="section-title">Vamos Conversar?</h2>
 
             <div class="contact-content">
@@ -305,13 +310,14 @@
                 </p>
 
                 <div class="contact-buttons">
-                    <a href="mailto:exemplo@email.com" class="btn btn-primary">
-                        <i class="fas fa-envelope" style="margin-right: 8px;"></i> Enviar E-mail
+                    <a href="#" id="email-btn" class="btn btn-primary">
+                        <i class="fas fa-copy" style="margin-right: 8px;"></i> Copiar E-mail
                     </a>
-                    <a href="#" class="btn btn-outline">
+                    <a href="https://www.linkedin.com/in/joaopedrogarciagonzaga" target="_blank"
+                        class="btn btn-outline">
                         <i class="fa-brands fa-linkedin" style="margin-right: 8px;"></i> LinkedIn
                     </a>
-                    <a href="#" class="btn btn-outline">
+                    <a href="https://github.com/dev-joaopedro" target="_blank" class="btn btn-outline">
                         <i class="fa-brands fa-github" style="margin-right: 8px;"></i> GitHub
                     </a>
                 </div>
@@ -323,9 +329,11 @@
     <footer>
         <div class="container">
             <div class="footer-socials">
-                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                <a href="mailto:exemplo@email.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/joaopedrogarciagonzaga" target="_blank" aria-label="LinkedIn"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/dev-joaopedro" target="_blank" aria-label="GitHub"><i
+                        class="fa-brands fa-github"></i></a>
+                <a href="#" id="email-footer" aria-label="Copiar Email"><i class="fas fa-envelope"></i></a>
             </div>
             <p class="footer-text">
                 &copy; <span id="year">2025</span> João Pedro Garcia Gonzaga. Todos os direitos reservados.
