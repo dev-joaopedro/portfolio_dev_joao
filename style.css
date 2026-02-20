@@ -507,6 +507,7 @@ section {
     color: var(--primary);
     width: 40px;
     text-align: center;
+    animation: float 4s ease-in-out infinite;
 }
 
 .skill-info h4 {
@@ -559,6 +560,10 @@ section {
     overflow: hidden;
     opacity: 0.8;
     transition: var(--transition);
+}
+
+.project-img-placeholder i {
+    animation: float 5s ease-in-out infinite;
 }
 
 .project-card:hover .project-img-placeholder {
@@ -753,6 +758,18 @@ footer {
 
     100% {
         background-position: -200% center;
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+    100% {
+        transform: translateY(0px);
     }
 }
 
