@@ -82,15 +82,15 @@ function typeEffect() {
         charIndex++;
     }
 
-    let typeSpeed = isDeleting ? 50 : 100;
+    let typeSpeed = isDeleting ? 40 : 80;
 
     if (!isDeleting && charIndex === currentWord.length) {
-        typeSpeed = 1500; // Pausa no final da palavra
+        typeSpeed = 2000; // Pausa no final da palavra (mais longa e profissional)
         isDeleting = true;
     } else if (isDeleting && charIndex === 0) {
         isDeleting = false;
         wordIndex = (wordIndex + 1) % words.length;
-        typeSpeed = 500; // Pausa antes de digitar nova palavra
+        typeSpeed = 600; // Pausa antes de digitar nova palavra
     }
 
     setTimeout(typeEffect, typeSpeed);
@@ -101,38 +101,7 @@ if (textElement) {
     setTimeout(typeEffect, 1000);
 }
 
-// 3. Efeito 3D Tilt nos Cards
-const tiltCards = document.querySelectorAll('.skill-card, .project-card');
-
-tiltCards.forEach(card => {
-    card.addEventListener('mousemove', (e) => {
-        const rect = card.getBoundingClientRect();
-        const x = e.clientX - rect.left; // Posição X do mouse dentro do card
-        const y = e.clientY - rect.top;  // Posição Y do mouse dentro do card
-
-        const centerX = rect.width / 2;
-        const centerY = rect.height / 2;
-
-        // Calcular a inclinação baseado na distância do centro
-        const tiltX = ((y - centerY) / centerY) * -10; // Inclinação Max 10 graus
-        const tiltY = ((x - centerX) / centerX) * 10;
-
-        card.style.transform = `perspective(1000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) scale3d(1.02, 1.02, 1.02)`;
-    });
-
-    // Resetar quando o mouse sai do card
-    card.addEventListener('mouseleave', () => {
-        card.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`;
-        card.style.transition = 'transform 0.5s ease';
-    });
-
-    // Remover a transição temporariamente ao entrar para reagir rápido ao mousemove
-    card.addEventListener('mouseenter', () => {
-        card.style.transition = 'none';
-    });
-});
-
-// 4. Copiar E-mail para a Área de Transferência
+// 3. Copiar E-mail para a Área de Transferência
 const emailBtn = document.getElementById('email-btn');
 const emailFooter = document.getElementById('email-footer');
 const userEmail = 'jjooaaoo46@gmail.com';

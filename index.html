@@ -26,11 +26,12 @@
 
 <body>
 
+    <div class="bg-orb"></div>
+
     <!-- Cabeçalho / Navegação -->
     <header id="header">
         <div class="container nav-container">
-            <a href="#" class="logo"><span
-                    style="color: var(--secondary); font-family: monospace; font-weight: 500; letter-spacing: -1px; margin-right: 2px;">dev-</span>João<span>Pedro</span></a>
+            <a href="#" class="logo">João<span>Pedro</span></a>
 
             <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Abrir menu">
                 <i class="fas fa-bars"></i>
@@ -49,7 +50,6 @@
 
     <!-- Seção Hero Principal -->
     <section id="home" class="hero">
-        <div class="hero-glow"></div>
         <div class="container">
             <div class="hero-content">
                 <span class="hero-greeting">Olá, eu sou</span>
@@ -231,19 +231,22 @@
 
             <div class="projects-grid">
 
-                <!-- Projeto 1: Golang Microservice -->
+                <!-- Projeto 1: Moran-Go -->
                 <div class="project-card reveal">
                     <div class="project-img-placeholder">
                         <i class="fas fa-network-wired"></i>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Moran.go</h3>
-                        <p class="project-desc">Projeto desenvolvido em Go (Golang). Inclui implementações práticas e
-                            estudos de caso utilizando a linguagem para explorar conceitos e desenvolvimento back-end.
+                        <h3 class="project-title">Moran-Go</h3>
+                        <p class="project-desc">Aplicação web em Go para gerenciamento de produtores rurais. Inclui
+                            autenticação segura com Bcrypt, 2FA via e-mail, autorização JWT e rastreamento de
+                            localização da fazenda com mapas.
                         </p>
                         <div class="project-tags">
-                            <span>Golang</span>
-                            <span>Back-end</span>
+                            <span>Go</span>
+                            <span>MySQL</span>
+                            <span>JWT</span>
+                            <span>2FA</span>
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/dev-joaopedro/moran-go" target="_blank"><i
@@ -252,44 +255,49 @@
                     </div>
                 </div>
 
-                <!-- Projeto 2: Data Analysis & ELT -->
+                <!-- Projeto 2: Plano de Voo -->
                 <div class="project-card reveal">
                     <div class="project-img-placeholder">
-                        <i class="fas fa-chart-pie"></i>
+                        <i class="fas fa-plane-departure"></i>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Plano de voo para envio</h3>
-                        <p class="project-desc">Projeto acadêmico desenvolvido durante o curso de Análise e
-                            Desenvolvimento de Sistemas. Foco na resolução de problemas propostos e aplicação prática de
-                            conceitos de programação.</p>
+                        <h3 class="project-title">Plano de Voo</h3>
+                        <p class="project-desc">Sistema de submissão de planos de voo desenvolvido em Java Swing com
+                            integração MySQL. Interface intuitiva para cadastro e validação de informações aeronáuticas
+                            conforme padrões internacionais.</p>
                         <div class="project-tags">
-                            <span>Acadêmico</span>
-                            <span>Desenvolvimento</span>
+                            <span>Java</span>
+                            <span>Swing</span>
+                            <span>MySQL</span>
+                            <span>JDBC</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/dev-joaopedro/ProjetoA3" target="_blank"><i
+                            <a href="https://github.com/dev-joaopedro/PlanoDeVoo" target="_blank"><i
                                     class="fa-brands fa-github"></i> Código Fonte</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Projeto 3: Java Enterprise App -->
+                <!-- Projeto 3: Academia SaaS -->
                 <div class="project-card reveal">
                     <div class="project-img-placeholder">
-                        <i class="fas fa-shield-halved"></i>
+                        <i class="fas fa-dumbbell"></i>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">SecureBank Access</h3>
-                        <p class="project-desc">API em Java baseada na Clean Architecture, gerenciando autenticação e
-                            controle de acesso via tokens JWT, protegida contra as principais vulnerabilidades da web.
+                        <h3 class="project-title">App Para Academia</h3>
+                        <p class="project-desc">Plataforma premium para gestão de treinos, periodizações e evolução de
+                            resultados. Desenvolvida com Next.js 15, NeonDB e Capacitor para suporte mobile nativo
+                            Android/iOS.
                         </p>
                         <div class="project-tags">
-                            <span>Java</span>
-                            <span>Spring Boot</span>
-                            <span>Security</span>
+                            <span>Next.js</span>
+                            <span>Capacitor</span>
+                            <span>Supabase</span>
+                            <span>Tailwind</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" target="_blank"><i class="fa-brands fa-github"></i> Código Fonte</a>
+                            <a href="https://github.com/dev-joaopedro/app-academia" target="_blank"><i
+                                    class="fa-brands fa-github"></i> Código Fonte</a>
                         </div>
                     </div>
                 </div>
