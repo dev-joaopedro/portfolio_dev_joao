@@ -1,26 +1,32 @@
 // Menu Mobile Toggle
 const mobileMenuBtn = document.getElementById('mobile-menu-btn');
 const navLinks = document.getElementById('nav-links');
+const navOverlay = document.getElementById('nav-overlay');
 const navItems = navLinks.querySelectorAll('a');
 
-mobileMenuBtn.addEventListener('click', () => {
+function toggleMenu() {
     navLinks.classList.toggle('active');
+    navOverlay.classList.toggle('active');
+
     const icon = mobileMenuBtn.querySelector('i');
     if (navLinks.classList.contains('active')) {
         icon.classList.remove('fa-bars');
         icon.classList.add('fa-times');
+        document.body.style.overflow = 'hidden'; // Previne scroll ao abrir menu
     } else {
         icon.classList.remove('fa-times');
         icon.classList.add('fa-bars');
+        document.body.style.overflow = 'initial';
     }
-});
+}
+
+mobileMenuBtn.addEventListener('click', toggleMenu);
+navOverlay.addEventListener('click', toggleMenu);
 
 navItems.forEach(item => {
     item.addEventListener('click', () => {
-        if (window.innerWidth <= 768) {
-            navLinks.classList.remove('active');
-            mobileMenuBtn.querySelector('i').classList.remove('fa-times');
-            mobileMenuBtn.querySelector('i').classList.add('fa-bars');
+        if (navLinks.classList.contains('active')) {
+            toggleMenu();
         }
     });
 });
